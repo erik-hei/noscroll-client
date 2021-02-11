@@ -1,6 +1,6 @@
 body {
-  background-color: blanchedalmond;
-  background: url('/img/bg.jpg');
+  background-color: #e8e1e1;
+  /* background: url('/img/bg.jpg'); */
   background-size: cover;
   background-attachment: fixed;
 }
