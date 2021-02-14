@@ -7,6 +7,7 @@ export default function Search(props) {
     const [formInput, setFormInput] = useState("");
     
     const handleSubmit = e => {
+        e.preventDefault();
         axios.get(`${process.env.REACT_APP_SERVER_URL}/recipes?tags=${formInput}`)
         .then(response => {
             if (response.data.message) {
@@ -23,9 +24,11 @@ export default function Search(props) {
     
     return (
         <div className="App-search">
-            <form>
+            <form onSubmit={e => handleSubmit(e)}>
                 <label className="search-label">Type in keywords to discover new recipes!</label>
-                <button className="search-button" onSubmit={handleSubmit} type="submit"><Link onClick={handleSubmit} to="/recipes" alt="Search">🔍</Link></button>
+                <button className="search-button" onChange={handleSubmit} type="submit">
+                    <span>🔍</span>
+                </button>
                 <input type="text" className="search-field" placeholder="Type in keywords to discover new recipes!" name="search" onChange={e => setFormInput(e.target.value)} required />
             </form>
         </div>

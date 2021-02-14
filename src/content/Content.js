@@ -14,7 +14,7 @@ import Signup from './pages/auth/Signup';
 
 export default function Content(props) {
     return (
-        <div>
+        <div className="container">
             <Switch>
                 <Route exact path="/" component={Recipes} />
                 <Route path="/recipes/new" render={() => <NewRecipe user={props.user} />} />

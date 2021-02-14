@@ -37,7 +37,7 @@ main {
   background: rgb(77, 37, 24);
   color: blanchedAlmond;
   padding: 10px;
-  margin: 10px;
+  /* margin: 10px; */
   border-radius: 10px;
 }
 h1 {
@@ -93,7 +93,9 @@ a:hover {
   color: red;
   text-decoration: none;
 }
-
+.container {
+  min-height: 100vh
+}
 .content {
   width: 100%;
   display: flex;
