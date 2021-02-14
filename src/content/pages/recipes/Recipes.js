@@ -29,7 +29,7 @@ export default function Recipes(props) {
    
     // need to pass user and update user to hold recipeId
     let searchedRecipesLinkList = !props.searchedRecipes ?
-    <h3>No more recipes. Try another search?</h3> :
+    <h3>Nothing came up. Try another search?</h3> :
     props.searchedRecipes.map((searchedRecipe, j) => (
         <div key={`recipeListItem-${j}`}>
             <Thumbnail recipe={searchedRecipe} />
@@ -37,7 +37,7 @@ export default function Recipes(props) {
     ));
 
     let topTwentyLinkList = topTwenty.length < 1 ?
-    <h3>No more recipes. You can add your own recipe below!</h3> :
+    <h3>Loading delicious...</h3> :
     topTwenty.map((topTwenty, i) => (
         <div key={`recipeListItem-${i}`}>
             <Thumbnail recipe={topTwenty} />
@@ -48,7 +48,6 @@ export default function Recipes(props) {
 
     return (
         <div>
-          <Link to="/recipes/new" className="white-bg">Add a recipe</Link>
           <div className="content">
             {outputList}
           </div>

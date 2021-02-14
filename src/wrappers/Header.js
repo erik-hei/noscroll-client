@@ -8,6 +8,7 @@ export default function Header(props) {
         <header className="App-header white-bg">
             <div>
                 <Link to="/" className="App-link">
+                    {/* <img src="/img/spaghetti.jpg" alt="spaghetti-logo" /> */}
                     <h1 className="fancy">NoScroll <span className="italic">Recipes</span></h1>
                 </Link>
                 <div className="red-line"></div>

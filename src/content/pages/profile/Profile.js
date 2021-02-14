@@ -74,6 +74,7 @@ export default function Profile(props) {
             </div>
             <div>
                 <h3 className="white-bg">My Recipes</h3>
+                <Link to="/recipes/new" className="white-bg">Add a recipe</Link>
                 {recipeLinkList}
             </div>
         </div>

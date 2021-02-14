@@ -7,6 +7,7 @@ import './App.css';
 import jwtDecode from 'jwt-decode';
 import Header from './wrappers/Header';
 import Content from './content/Content';
+import Footer from './wrappers/Footer';
 
 const App = function() {
   let [user, setUser] = useState(null);
@@ -47,6 +48,7 @@ const App = function() {
         <main>
           <Content searchedRecipes={searchedRecipes} updateUser={updateUser} user={user} />
         </main>
+        <Footer />
       </div>
     </Router>
   );
