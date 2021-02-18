@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/noscroll-client/precache-manifest.72ff12c0c4a3151f865ea735bda30e02.js"
+  "/noscroll-client/precache-manifest.2896de5feadbb3f15d873522401b5d60.js"
 );
 
 self.addEventListener('message', (event) => {
