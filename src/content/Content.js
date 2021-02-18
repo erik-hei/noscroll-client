@@ -13,6 +13,7 @@ import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 
 export default function Content(props) {
+    console.log("SEARCHED REC", props.searchedRecipes)
     return (
         <div className="container">
             <Switch>

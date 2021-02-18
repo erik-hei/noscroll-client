@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 
 export default function Search(props) {
     const [error, setError] = useState(null);
     const [formInput, setFormInput] = useState("");
     
     const handleSubmit = e => {
-        e.preventDefault();
+        // e.preventDefault();
         axios.get(`${process.env.REACT_APP_SERVER_URL}/recipes?tags=${formInput}`)
         .then(response => {
             if (response.data.message) {
@@ -16,6 +16,7 @@ export default function Search(props) {
             } else {
                 console.log(formInput)
                 props.setSearchedRecipes(response.data);
+                // return <Redirect to="/recipes" />
             }
         }).catch(err => {
             console.log(err);
@@ -24,10 +25,12 @@ export default function Search(props) {
     
     return (
         <div className="App-search">
-            <form onSubmit={e => handleSubmit(e)}>
+            {/* <form onSubmit={e => handleSubmit(e)}> */}
+            <form>
                 <label className="search-label">Type in keywords to discover new recipes!</label>
-                <button className="search-button" onChange={handleSubmit} type="submit">
-                    <span>🔍</span>
+                <button className="search-button" type="submit">
+                    <Link onClick={e => handleSubmit(e)} to="/recipes" alt="Search">🔍</Link>
+                    {/* 🔍 */}
                 </button>
                 <input type="text" className="search-field" placeholder="Type in keywords to discover new recipes!" name="search" onChange={e => setFormInput(e.target.value)} required />
             </form>

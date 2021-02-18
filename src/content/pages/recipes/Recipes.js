@@ -9,6 +9,7 @@ export default function Recipes(props) {
     // make 'recipes' state
     const [topTwenty, setTopTwenty] = useState([]);
     const [error, setError] = useState(null);
+    console.log("SEARCHED REC", props)
 
     // call to db to get all recipes
     useEffect(() => { 

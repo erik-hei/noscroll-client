@@ -12,6 +12,7 @@ import Footer from './wrappers/Footer';
 const App = function() {
   let [user, setUser] = useState(null);
   let [searchedRecipes, setSearchedRecipes] = useState([]);
+  console.log("SEARCHED REC", searchedRecipes)
 
   useEffect(()=> {
     decodeToken();

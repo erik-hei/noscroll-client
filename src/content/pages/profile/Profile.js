@@ -33,9 +33,7 @@ export default function Profile(props) {
         return <Redirect to='/' />
     }
 
-    console.log("the user is 😎", props.user)
-    console.log('This is the user recipes')
-    console.log(userRecipes)
+
 
     let recipeLinkList = (userRecipes && userRecipes.length > 0) ? 
         userRecipes.map(recipe => <Thumbnail recipe={recipe} isAuthor={true} />):
