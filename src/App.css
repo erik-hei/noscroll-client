@@ -272,6 +272,13 @@ a:hover {
   margin: 20px;
 }
 
+.recipe-form {
+  text-align: left;
+}
+.recipe-form div {
+  padding: 10px;
+}
+
 /*-------------------------FORMs-------------------------------------------*/
 
 input {
