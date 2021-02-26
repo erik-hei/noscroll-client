@@ -5,7 +5,6 @@ import axios from 'axios';
 
 export default function NewRecipe(props) {
   // Declare and initialize state variables
-  let [newRecipe, setNewRecipe] = useState({});
   let [message, setMessage] = useState("");
   let [redirect, setRedirect] = useState("");
   let [title, setTitle] = useState('');
@@ -76,6 +75,12 @@ export default function NewRecipe(props) {
         <div>
           <label>Image url:</label>
           <input type="url" name="image" onChange={e => setImage(e.target.value)} />
+          {!image ? "":
+            <div>
+              <p>Image Preview:</p>
+              <img src={image} alt={alt} />
+            </div>
+          }
         </div>
         <div>
           <label>Servings:</label>

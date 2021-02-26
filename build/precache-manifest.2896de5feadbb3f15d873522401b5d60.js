@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60ff7b5ea0ae1200e7958d740af0959d",
+    "revision": "97c699befcbfe93c243eba7df6b9068b",
     "url": "/noscroll-client/index.html"
   },
   {
-    "revision": "b03f89f3039ad4fc502d",
+    "revision": "c564482960e87aeda994",
     "url": "/noscroll-client/static/css/main.b3142fe8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/noscroll-client/static/js/2.d6e1e033.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b03f89f3039ad4fc502d",
-    "url": "/noscroll-client/static/js/main.60a0b370.chunk.js"
+    "revision": "c564482960e87aeda994",
+    "url": "/noscroll-client/static/js/main.223e284e.chunk.js"
   },
   {
     "revision": "d98ceaf3613e65fa58f2",
