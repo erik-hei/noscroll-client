@@ -272,11 +272,14 @@ a:hover {
   margin: 20px;
 }
 
-.recipe-form {
+.recipe-form-container {
   text-align: left;
 }
-.recipe-form div {
+.recipe-form {
   padding: 10px;
+}
+.recipe-form label {
+  margin: 10px 0;
 }
 
 /*-------------------------FORMs-------------------------------------------*/
